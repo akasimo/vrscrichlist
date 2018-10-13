@@ -36,8 +36,10 @@ df = pd.read_html(link)[0]
 # In[6]:
 
 print(df.columns)
-df.drop("Detail ", axis = 1, inplace = True)
-
+if "Detail " in df.columns:
+    df.drop("Detail ", axis = 1, inplace = True)
+elif "Detail" in df.columns:
+    df.drop("Detail", axis = 1, inplace = True)
 
 # In[7]:
 
