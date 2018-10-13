@@ -93,7 +93,7 @@ def coinsum(dataframe, epoch, rank=100):
 
 
 # coinsum(df_merged, checkdates[-1], rank=100)/coinsum(df_merged, checkdates[-2], rank=100)
-
+print(coinsum(df_merged, checkdates[-1], rank=100))
 
 # In[15]:
 
